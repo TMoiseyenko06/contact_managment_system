@@ -1,9 +1,12 @@
+#import Functions in other files
 import list_managment as man
 import file_managment as fil
 
+#Asks user for inputs and calls the functions
 def main():
     contact_list = []
     while True:
+        #Makes sure user inputs a valid number
         try:
             option = int(input('''\nWelcome to the Contact Management System! 
 Menu:
@@ -39,5 +42,6 @@ Menu:
                 else:
                     break
 
+#makes sure the main() function runs
 if __name__ == "__main__":
     main()

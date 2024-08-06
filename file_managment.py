@@ -1,11 +1,13 @@
 import os 
 
+#exports all of the current contacts into a .txt file
 def export_contacts(contacts):
     with open('contacts.txt', 'w') as file:
         for item in contacts:
             for key, value in item.items():
                 file.write(f"{key},{value[0]},{value[1]},{'None' if value[2] == '' else value[2]}")
             
+#imports text from a .txt file and notifies the user if there has been an error
 def import_contacts(file_path):
     try:
         contacts = []

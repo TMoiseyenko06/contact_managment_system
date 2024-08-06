@@ -1,9 +1,11 @@
+#Searches the contact list for the contact and returns all the information if the conact exists
 def search(contact,list):
     for item in list:
         for key in item.keys():
             if key == contact:
                 return item
 
+#adds a contact to the contact list
 def add_contact(contact,list):
     number = input("What is {contact}'s Phone Number?")
     email = input("What is their E-Mail?")
@@ -14,6 +16,7 @@ def add_contact(contact,list):
         additional = ''
     list.append({contact:[number,email,additional]})
 
+#checks if conact exists and then removes it if it does
 def remove_contact(contact,list):
     contact = search(contact,list)
     if not contact:
@@ -21,6 +24,7 @@ def remove_contact(contact,list):
     else:
         list.pop(list.index(contact))
 
+#Takes a contact name and returns all the info about it if it exists
 def search_contact(contact,list):
     searched = search(contact,list)
     if not searched:
@@ -32,6 +36,7 @@ Phone Number: {info[0]}
 E-Mail: {info[1]}
 Additional Info: {'None' if info[2] == '' else info[2]}''')
 
+#Allows the user to edit all aspects of a contact
 def edit_contact(contact,list):
     searched = search(contact,list)
     if not searched:
@@ -64,6 +69,7 @@ def edit_contact(contact,list):
         finally:
             return list
 
+#displays all of the current contacts in a formatted and neat way
 def display_contacts(list):
     for item in list:
         for key, value in item.items():
