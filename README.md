@@ -1,6 +1,6 @@
 # Contact Manegment System Project 
 
-
+A simple Contact Managment system Built on python that supports a variety of functions with more on the way!
 
 ## Table of Contents
 - [Installation](#installation)
@@ -15,6 +15,9 @@
 ```
 
 ## Usage 
+
+- Make sure that all of the files and directories are in the same directory orelse none of the functions will work!
+- Running [main.py](/main.py) will start the progam in the command line.
 
 ## Functions 
 
