@@ -18,6 +18,7 @@ A simple Contact Managment system Built on python that supports a variety of fun
 
 - Make sure that all of the files and directories are in the same directory orelse none of the functions will work!
 - Running [main.py](/main.py) will start the progam in the command line.
+- The program will Import [list_managment.py](/list_managment.py) and [file_managment.py](/file_managment.py) in order to use the functions in [main.py](/main.py)
 
 ## Functions 
 
